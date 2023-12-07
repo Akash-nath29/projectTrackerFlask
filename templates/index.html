@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="nav">
+    {% if session['user_name'] %}
+    <center>
+        <h3 style="color: green;">Welcome {{session['user_name']}}</h3>
+    </center>
+    {% endif %}
+    <div class="rightside">
+        <a href="/chart">View Chart</a>
+        {% if session['user_name'] %}
+        <center>
+            <a href="/logout">Logout</a>
+        </center>
+        {% else %}
+        <center>
+            <a href="/">Login</a> or <a href="/register">Register</a> to get started.
+        </center>
+        {% endif %}
+    </div>
+</div>
+<form action="/home" method="post" id="commitForm">
+    <input type="text" name="commit_title" id="commit-name" placeholder="Name ur commit" required>
+    <textarea name="commit_description" id="commit-description" cols="30" rows="10"
+        placeholder="Commit Description (optional)"></textarea>
+    <input type="submit" value="Commit">
+</form>
+<br>
+<div class="history">
+    <center>
+        <h3>History</h3>
+        {% if commit_history %}
+        <ul>
+            {% for commit in commit_history %}
+            <li>
+                <h4>{{ commit.username }} committed "{{ commit.commit_title }}"</h4>
+                <p> "{{
+                    commit.commit_description }}"</p>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No commits yet.</p>
+        {% endif %}
+    </center>
+</div>
+{% endblock %}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.container #loginForm {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container #loginForm input {
+    padding: 8px 20px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+.container #loginForm input[type=submit] {
+    background-color: white;
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 3vw;
+}
+#commitForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5vh; */
+}
+#commitForm input, textarea {
+    width: 50%;
+    padding: 8px 20px;
+    outline: none;
+    border: 1px solid black;
+    margin: 5px 0;
+    border-radius: 5px;
+    resize: none;
+    background-color: white;
+    cursor: pointer;
+}
+ul li {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2vh 3vw;
+}
+.rightside {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rightside a {
+    margin: 0 1vw;
+}

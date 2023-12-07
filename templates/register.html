@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Commit Tracker{% endblock %}
+{% block body %}
+<form action="/register" method="post" id="loginForm">
+    <center>
+        <h1>Regitser</h1>
+    </center>
+    <br>
+    <input type="text" name="username" id="username" placeholder="Enter Username" autocomplete="off">
+    <input type="password" name="password" id="password" placeholder="Enter Password">
+    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+    <input type="submit" value="Register">
+    <!-- <button onclick="document.querySelector('#password').type = 'text' " style="background-color: white; border: none; outline: none;">Show Password</button> -->
+    <br>
+    <center>
+        Already have an account? <a href="/">Login</a> Here.
+    </center>
+</form>
+{% if message %}
+<center>
+    <h3 style="position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); color: red;">{{message}}</h3>
+</center>
+{% endif %}
+{% endblock %}
