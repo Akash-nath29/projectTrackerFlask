@@ -1,4 +1,3 @@
-from email import message
 from flask import Flask, render_template, request, redirect, session
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
@@ -75,7 +74,7 @@ def register():
         # Log in the new user automatically after registration
             session['user_id'] = new_user.userid
 
-        return redirect('/home')
+        return redirect('/')
 
     return render_template('register.html')
 
