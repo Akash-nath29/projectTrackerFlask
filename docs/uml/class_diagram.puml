@@ -1,0 +1,41 @@
+@startuml
+
+package "Models" {
+  class User {
+    +userid: Integer
+    +username: String
+    -password: String
+    +commit_number: Integer
+    +__init__(username, password)
+  }
+
+  class Commit {
+    +id: Integer
+    +userid: Integer
+    +commit_title: String
+    +commit_description: Text
+    +__init__(userid, commit_title, commit_description)
+  }
+
+  User "1" --> "many*" Commit : makes
+}
+
+package "Flask Routes" {
+  class FlaskApp {
+    +login()
+    +logout()
+    +register()
+    +index()
+    +chart()
+  }
+}
+
+FlaskApp ..> User : uses
+FlaskApp ..> Commit : uses
+
+note right of User
+  Model untuk pengguna aplikasi
+  commit_number adalah total commit
+end note
+
+@enduml

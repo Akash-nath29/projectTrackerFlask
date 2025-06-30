@@ -1,0 +1,213 @@
+{
+  "id": "5b74ec87-d556-4ecc-80e2-0a792f9fa4a3",
+  "version": "2.0",
+  "name": "SyntaNur",
+  "url": "https://glowing-space-guide-pjg7j99jjrpj3rvqg-5000.app.github.dev",
+  "tests": [{
+    "id": "c77a9235-920c-4f54-aaf3-2009819a86fd",
+    "name": "LOGIN ADD LOGOUT",
+    "commands": [{
+      "id": "18b234a0-21e1-4481-9470-5699761c3bb0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "548c666e-f574-4444-b47b-ecb91c92e084",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1240x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2868ddae-1854-4352-bd76-993c0c62697a",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2dfa0b8-4116-4023-af33-9c180d2365c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Synta"
+    }, {
+      "id": "77c751aa-b4fa-47f6-b1a8-1167a441cecb",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b45f074-20e3-492f-a47b-9ada46d9870b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "260904"
+    }, {
+      "id": "c2efea4b-76ba-4d63-a4c6-0cb61b3a0a15",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf51afed-0853-4d66-8e3b-effcac1f4549",
+      "comment": "",
+      "command": "click",
+      "target": "id=commit-description",
+      "targets": [
+        ["id=commit-description", "id"],
+        ["name=commit_description", "name"],
+        ["css=#commit-description", "css:finder"],
+        ["xpath=//textarea[@id='commit-description']", "xpath:attributes"],
+        ["xpath=//form[@id='commitForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f281ec5c-925e-4085-b3f3-f11307a6cda8",
+      "comment": "",
+      "command": "click",
+      "target": "id=commit-name",
+      "targets": [
+        ["id=commit-name", "id"],
+        ["name=commit_title", "name"],
+        ["css=#commit-name", "css:finder"],
+        ["xpath=//input[@id='commit-name']", "xpath:attributes"],
+        ["xpath=//form[@id='commitForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fecf03d6-4d2a-4e12-ba89-25b3af79f9a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=commit-name",
+      "targets": [
+        ["id=commit-name", "id"],
+        ["name=commit_title", "name"],
+        ["css=#commit-name", "css:finder"],
+        ["xpath=//input[@id='commit-name']", "xpath:attributes"],
+        ["xpath=//form[@id='commitForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "PROJECTUAS"
+    }, {
+      "id": "9b2b3ad0-2692-447c-b36f-02e8a39370d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=commit-description",
+      "targets": [
+        ["id=commit-description", "id"],
+        ["name=commit_description", "name"],
+        ["css=#commit-description", "css:finder"],
+        ["xpath=//textarea[@id='commit-description']", "xpath:attributes"],
+        ["xpath=//form[@id='commitForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a98d5aa6-9d65-4da2-bbb9-957e771a320a",
+      "comment": "",
+      "command": "type",
+      "target": "id=commit-description",
+      "targets": [
+        ["id=commit-description", "id"],
+        ["name=commit_description", "name"],
+        ["css=#commit-description", "css:finder"],
+        ["xpath=//textarea[@id='commit-description']", "xpath:attributes"],
+        ["xpath=//form[@id='commitForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "SYNTANUR"
+    }, {
+      "id": "000c5544-1030-4d40-8532-9f14d7e09c56",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Commit']", "xpath:attributes"],
+        ["xpath=//form[@id='commitForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab40e81-5036-4d14-a87d-ccfcb5f1bfbb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Chart",
+      "targets": [
+        ["linkText=View Chart", "linkText"],
+        ["css=.rightside > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Chart')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/chart')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Chart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04c46fe0-138d-4346-984b-02556ac0eb5a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=center > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//center/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d7518790-cf87-488d-946a-220e75caf464",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c77a9235-920c-4f54-aaf3-2009819a86fd"]
+  }],
+  "urls": ["https://glowing-space-guide-pjg7j99jjrpj3rvqg-5000.app.github.dev/"],
+  "plugins": []
+}

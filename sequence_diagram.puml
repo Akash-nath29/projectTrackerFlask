@@ -1,0 +1,28 @@
+@startuml
+
+actor User
+
+participant "FlaskApp (/login)" as LoginController
+participant "User Model" as UserModel
+participant "Commit Model" as CommitModel
+participant "Session"
+
+== Login Flow ==
+User -> LoginController : submit(username, password)
+LoginController -> UserModel : query(username, password)
+UserModel --> LoginController : user object or None
+alt if user found
+    LoginController -> Session : store user_id, user_name
+    LoginController -> User : redirect to /home
+else
+    LoginController -> User : show error message
+end
+
+== Commit Creation ==
+User -> LoginController : submit(commit_title, commit_description)
+LoginController -> UserModel : get current user from session
+LoginController -> CommitModel : save new commit(userid, title, desc)
+LoginController -> UserModel : increment commit_number
+LoginController -> User : redirect to /home
+
+@enduml
